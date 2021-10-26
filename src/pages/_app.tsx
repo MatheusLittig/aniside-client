@@ -1,5 +1,7 @@
-const App = () => {
-  return <h1>dawdadaw</h1>;
+import { AppProps } from 'next/app';
+
+const App = ({ pageProps, Component }: AppProps) => {
+  return <Component {...pageProps} />;
 };
 
 export default App;
